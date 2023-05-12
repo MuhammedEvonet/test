@@ -14,6 +14,7 @@ import Widget from "../../components/widget/widget"
         <Widget />
         <Widget />
         <Widget />
+        <Widget />
       </div>
       <div className="charts">
         charts are here
