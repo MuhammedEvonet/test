@@ -13,10 +13,10 @@ import Table from "../../components/table/table"
     <div className="homeContainer">
       <Navbar />
       <div className="widgets">
-        <Widget type="user"/>
-        <Widget type="order"/>
-        <Widget type="earning"/>
-        <Widget type="balance"/>
+        <Widget />
+        <Widget />
+        <Widget />
+        <Widget />
       </div>
       <div className="charts">
           <Feaatured/>
