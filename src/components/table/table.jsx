@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { v4 as uuid } from 'uuid';
+import React, { useEffect, useState } from 'react';
 
 
 function RndKey() {
@@ -19,18 +20,16 @@ function RndKey() {
 const tablelist = () => {
 
     const sampleData=[{"_name":"Omercan Kuyumcu","_email":"test@evonet.com.tr","_age":30,"_city":"Istanbul"},{"_name":"John Doe","_email":"johndoe@example.com","_age":25,"_city":"New York"},{"_name":"Jane Smith","_email":"janesmith@example.com","_age":35,"_city":"London"}]
-    const sampleIds =[]
     const unique_id = uuid();
     const small_id = unique_id.slice(0,8)
     
-        
+   
       
   return (
     <TableContainer component={Paper} className="table">
     <Table sx={{ minWidth: 650 }} aria-label="Sample Data from Evonet">
       <TableHead>
         <TableRow>
-          <TableCell className="tableCell">_id</TableCell>
           <TableCell className="tableCell">_id</TableCell>
           <TableCell className="tableCell">_name </TableCell>
           <TableCell className="tableCell">_email</TableCell>
@@ -44,7 +43,6 @@ const tablelist = () => {
             key={row.id}
           >
             <TableCell className="tableCell">{small_id}</TableCell>
-            <TableCell className="tableCell">            </TableCell>
             <TableCell className="tableCell">{row._name}</TableCell>
             <TableCell className="tableCell">{row._email}</TableCell>
             <TableCell className="tableCell">{row._age}</TableCell>
